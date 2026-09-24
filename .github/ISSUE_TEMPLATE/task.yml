@@ -1,0 +1,31 @@
+name: 作業・改善
+description: 新機能、改善、文書・設定変更などの課題を記録する
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的・背景
+      description: 何を解決・実現するかを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 対象範囲
+      description: 対象と、決まっている制約を書いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      description: 何を確認できれば完了かを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 関連情報
+      description: 関連Issue、仕様、参考資料などがあれば記載してください。
+    validations:
+      required: false

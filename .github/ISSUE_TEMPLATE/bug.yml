@@ -1,0 +1,32 @@
+name: 不具合
+description: 動作の不具合や予期しない結果を記録する
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 現象
+      description: 何が起きているか、影響する範囲を書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順
+      description: 分かる範囲で、入力や操作と実際の結果を書いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する結果・完了条件
+      description: 修正後に何を確認できれば完了かを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足
+      description: 関連Issue、ログ、画像、環境などがあれば記載してください。秘密情報は含めないでください。
+    validations:
+      required: false
